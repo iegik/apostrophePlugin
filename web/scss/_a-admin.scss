@@ -1,0 +1,481 @@
+@mixin a-admin{
+/* Admin Generator
+-------------------------------------*/
+
+.a-admin {
+  a {
+    img, &:link img, &:visited img {
+      border: none; }
+    &:hover {
+      color: #333; } }
+  .a-content {
+    float: left;
+    display: inline;
+    margin: 0;
+    width: 720px; } }
+
+.a-admin-content {
+  float: left;
+  display: inline;
+  margin: 0;
+  width: 720px; }
+
+.a-admin {
+  #a-admin-list-actions {
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd; }
+  .notice {
+    color: #666;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 20px; }
+  fieldset h2 {
+    padding: 10px 0 0;
+    margin: 0 0 10px 0;
+    color: #333;
+    background-color: transparent;
+    font-size: 14px;
+    text-transform: capitalize;
+    border-top: 1px #ddd solid; }
+  .a-admin-text input {
+    float: left;
+    clear: both; }
+  .a-admin-batch-actions-choice select {
+    float: left;
+    margin-right: 10px; }
+  .save-ok {
+    margin-bottom: 10px;
+    border: 1px solid #73B65A;
+    h2 {
+      margin: 0 !important;
+      padding: 5px 20px 5px 25px;
+      font-size: 11px;
+      color: #fff;
+      background: #73b65a url(../images/ok.png) no-repeat 5px 2px; } }
+  .a-form-row td {
+    margin-bottom: 10px;
+    float: left;
+    clear: both;
+    position: relative; } }
+
+.a-admin-footer {
+  width: 720px;
+  float: right;
+  line-height: 1.5;
+  margin: 20px 0; }
+
+.a-admin {
+  label.required {
+    color: #333 !important;
+    font-weight: bold !important; }
+  .form-error {
+    color: #f33; }
+  ul {
+    &.a-admin-td-actions {
+      list-style-type: none;
+      display: block;
+      float: left;
+      li {
+        list-style-type: none;
+        display: block;
+        float: left;
+        width: auto;
+        margin: 1px; } }
+    &.a-admin-actions {
+      float: left;
+      display: inline;
+      width: 100%;
+      margin: 0 0 10px 0;
+      list-style-type: none;
+      padding-top: 20px; } } }
+
+.a-admin-actions {
+  a {
+    color: #333; }
+  li {
+    list-style-type: none;
+    float: left;
+    margin-right: 1px !important; }
+  select {
+    float: left; } }
+
+.a-admin {
+  &.sfGuardUser a.icon.a-add {
+    background-image: url(../images/a-icon-users.png); }
+  ul.a-admin-actions {
+    li.a-admin-batch-actions-choice {
+      float: left; }
+    input {
+      padding: 2px;
+      color: #333;
+      font-size: 11px;
+      font-family: Arial, sans-serif;
+      border: 0px;
+      border-right: 4px solid #888;
+      background-color: #ffc;
+      cursor: hand;
+      cursor: pointer;
+      width: auto; } }
+  .a-admin-default-action {
+    background-color: #fc6 !important;
+    font-weight: bold !important; } }
+
+.a-admin-form-container, #a-admin-form, #a-admin-batch-form {
+  float: left;
+  clear: both;
+  width: 100%;
+  border-bottom: 0px;
+  border-right: 0px;
+  margin: 0;
+  padding: 0; }
+
+.a-admin-list {
+  float: left;
+  clear: both;
+  width: 100%;
+  border-bottom: 0px;
+  border-right: 0px;
+  margin: 0;
+  padding: 0;
+  table {
+    float: left;
+    clear: both;
+    width: 100%;
+    border-bottom: 0px;
+    border-right: 0px;
+    margin: 0;
+    padding: 0; } }
+
+.a-admin-form-container .a-admin-form-container {
+  margin-top: 40px;
+  margin-left: -120px; }
+
+#a-admin-list-batch-actions {
+  width: 20px;
+  * {
+    display: block; } }
+
+#a-admin-list-th-actions {
+  width: 100px; }
+
+.a-admin-list {
+  th, td {
+    position: relative;
+    padding: 8px 5px;
+    border: none;
+    margin: 0;
+    vertical-align: middle; }
+  thead th {
+    font-size: 14px;
+    text-align: left;
+    border-bottom: 1px solid #e2e2e2;
+    line-height: 24px;
+    vertical-align: middle;
+    * {
+      float: left; }
+    .a-btn.flag {
+      &.icon.a-sort-arrow.expanded, &.no-label.a-sort-arrow.expanded {
+        background-position: 0 -20px; } } }
+  tfoot th {
+    border: 1px solid #e2e2e2;
+    border-left: none;
+    border-right: none; } }
+
+.a-admin-filter li {
+  list-style-type: none; }
+
+.a-admin-row {
+  td {
+    border-left: 1px solid #e5e5e5; }
+  &.odd td {
+    background-color: #f7f7f7; } }
+
+.a-admin .a-admin-row-1 td {
+  border-top: 1px solid #e2e2e2; }
+
+.a-admin-row td.first {
+  border-left: 0; }
+
+.a-admin {
+  .a-admin-edit-help {
+    color: #aaa; }
+  select {
+    &.a-admin-multiple, &.a-admin-multiple-selected {
+      width: 12em; } }
+  ul.a-admin-checklist li {
+    list-style: none;
+    list-style-position: outside !important;
+    line-height: 1.5em;
+    label {
+      display: inline;
+      float: none; } } }
+
+.a-admin-actions input {
+  border: 1px solid #ddd !important;
+  padding: 3px;
+  background: #fff !important;
+  font-size: 12px !important;
+  vertical-align: baseline !important;
+  &:hover {
+    border-color: #666 !important; } }
+
+.a-admin-list-results {
+  float: left;
+  font-size: 14px;
+  color: #333;
+  height: 20px;
+  line-height: 20px;
+  margin: 10px 0;
+  width: 100px; }
+
+.a-admin-bar {
+  position: relative;
+  float: left;
+  display: inline;
+  clear: both;
+  margin: 0 0 20px 0;
+  width: 100%;
+  .a-admin-title {
+    color: #666;
+    font-size: 24px;
+    line-height: 24px;
+    float: left;
+    top: 0;
+    text-transform: capitalize; } }
+
+.a-date-wrapper, .a-time-wrapper {
+  margin-bottom: 4px;
+  float: left;
+  clear: both; }
+
+.a-date-wrapper input, .a-time-wrapper input {
+  float: left;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1px;
+  -moz-border-radius: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-radius: 3px; }
+
+.ui-timepicker-trigger {
+  position: relative;
+  float: left;
+  padding: 0 3px;
+  cursor: pointer; }
+
+.ui-datepicker-trigger {
+  position: relative;
+  float: left;
+  padding: 0 3px;
+  cursor: pointer;
+  &:hover {
+    cursor: pointer; } }
+
+.a-admin {
+  .a-admin-flashes {
+    /* We should make two styles for .a-admin-flashes.error and .a-admin-flashes.notice */
+    color: #EF9920;
+    float: left;
+    clear: both;
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    line-height: 20px;
+    text-indent: 24px;
+    background: transparent url(../images/a-icon-error.png) no-repeat scroll left top; }
+  form {
+    .a-form-row .error_list {
+      li {
+        padding-left: 24px;
+        line-height: 20px; }
+      display: block;
+      font-size: 11px; }
+    .error_list li {
+      height: 20px;
+      line-height: 24px;
+      padding-left: 20px;
+      background: url(../images/a-icon-error.png) top left no-repeat;
+      list-style: none;
+      list-style-position: outside; } }
+  #a-admin-filters-container {
+    display: none;
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-bottom: 24px;
+    color: #333;
+    border: 1px solid #e2e2e2;
+    &.a-active {
+      display: block; }
+    #a-admin-filters-form {
+      padding: 10px;
+      .a-form-row {
+        padding: 0;
+        margin: 3px 0 2px 0;
+        .a-admin-filter-label {
+          width: 120px;
+          float: left;
+          display: inline;
+          label {
+            float: left;
+            display: inline; } }
+        .a-admin-filter-field {
+          display: inline;
+          margin: 0 0 0 120px;
+          width: 580px;
+          label {
+            position: relative !important;
+            display: block;
+            float: left; } } } } }
+  .aUserAdmin #a-admin-filters-container #a-admin-filters-form .a-form-row .a-admin-filter-label, .aGroupAdmin #a-admin-filters-container #a-admin-filters-form .a-form-row .a-admin-filter-label, .aPermissionAdmin #a-admin-filters-container #a-admin-filters-form .a-form-row .a-admin-filter-label {
+    width: 120px;
+    float: left;
+    display: block; }
+  .aUserAdmin #a-admin-filters-container #a-admin-filters-form .a-form-row .a-admin-filter-field, .aGroupAdmin #a-admin-filters-container #a-admin-filters-form .a-form-row .a-admin-filter-field, .aPermissionAdmin #a-admin-filters-container #a-admin-filters-form .a-form-row .a-admin-filter-field {
+    margin: 0px 0px 10px 120px;
+    width: 580px;
+    display: block; }
+  .aUserAdmin #a-admin-filters-container #a-admin-filters-form .a-form-row .a-admin-filter-field label, .aGroupAdmin #a-admin-filters-container #a-admin-filters-form .a-form-row .a-admin-filter-field label, .aPermissionAdmin #a-admin-filters-container #a-admin-filters-form .a-form-row .a-admin-filter-field label {
+    display: inline;
+    width: auto;
+    float: none;
+    min-width: 0px; }
+  .aUserAdmin #a-admin-filters-container #a-admin-filters-form .a-form-row .a-admin-filter-field input[type="checkbox"], .aGroupAdmin #a-admin-filters-container #a-admin-filters-form .a-form-row .a-admin-filter-field input[type="checkbox"], .aPermissionAdmin #a-admin-filters-container #a-admin-filters-form .a-form-row .a-admin-filter-field input[type="checkbox"] {
+    display: inline;
+    width: auto;
+    float: none;
+    margin-left: 10px;
+    min-width: 0px; }
+  .aUserAdmin .a-form-row input[type="text"] {
+    float: none;
+    display: inline; } }
+
+/* 28. Admin Generator - Filters
+-------------------------------------*/
+
+/* 29. a-user-admin and friends are still very vanilla, help them work in a vanilla way
+-----------------------------------------------------------------------------------------*/
+
+/* Label floats to the left of main filter field */
+
+/* "Is Empty" is inline */
+
+/* "Is Empty" is inline; checkboxes need a min-width override that really works cross-browser */
+
+/* The actual data entry fields are inline so they can be consecutive on a line etc. as in date range widgets */
+
+.aUserAdmin .a-form-row {
+  input[type="password"], select, textarea {
+    float: none;
+    display: inline; } }
+
+.a-admin .aGroupAdmin .a-form-row input[type="text"] {
+  float: none;
+  display: inline; }
+
+.aGroupAdmin .a-form-row {
+  input[type="password"], select, textarea {
+    float: none;
+    display: inline; } }
+
+.a-admin .aPermissionAdmin .a-form-row input[type="text"] {
+  float: none;
+  display: inline; }
+
+.aPermissionAdmin .a-form-row {
+  input[type="password"], select, textarea {
+    float: none;
+    display: inline; } }
+
+/* br is a special case, it's not really an element that can be styled consistently: 
+	http://stackoverflow.com/questions/899252/can-you-target-br-with-css
+	So we transform it via jQuery (apostrophe.enableUserAdmin) into a div with a class that we can style */
+
+.a-admin div.a-spacer {
+  display: block;
+  padding-bottom: 6px; }
+
+/* 33. Some Admin Generator Styles
+-------------------------------------*/
+
+.a-admin-generator {
+  .a-form-row {
+    input, textarea {
+      min-width: 160px;
+      max-width: 358px; }
+    select {
+      width: auto; }
+    input {
+      &[type="checkbox"], &[type="radio"] {
+        width: auto; } }
+    /*min-width:590px;*/
+    /*width: auto !important;*/
+    /*width: 590px;*/
+    label {
+      /*float: left;*/
+      /*text-align: left;*/
+      /*width: 120px;*/
+      /*color: #666;/*/
+      /*font-weight: normal !important;*/
+      /*text-transform: capitalize;*/
+      /*position: absolute !important;*/
+      /*top: 0;*/
+      /*left: 0;*/
+      /*line-height: 20px;*/
+      /*display: block;*/ }
+    .checkbox_list {
+      label {
+        margin: -2px 0 0 5px; }
+      li {
+        float: left;
+        display: inline;
+        width: 100%;
+        position: relative; } } }
+  .a-form-help {
+    display: block;
+    clear: both;
+    margin: 10px 0 20px 120px;
+    font-size: 11px;
+    color: #888; }
+  .form-errors {
+    margin-bottom: 10px;
+    border: 1px solid #f33;
+    background-color: #ffc;
+    h2 {
+      padding: 5px 20px 5px 25px;
+      font-size: 11px;
+      color: #fff;
+      background: #ff3333 url(../images/error.png) no-repeat 5px 2px; }
+    dl {
+      padding: 5px; }
+    dt {
+      font-weight: bold;
+      float: left;
+      padding-right: 5px; }
+    dd {
+      margin: 0; } }
+  fieldset {
+    margin-bottom: 3px;
+    border: none; }
+  &.aTagAdmin .a-subnav-wrapper.admin, &.aCategoryAdmin .a-subnav-wrapper.admin {
+    display: none; }
+  &.aTagAdmin {
+    .a-content, .a-admin-content {
+      width: 100%; } }
+  &.aCategoryAdmin {
+    .a-content, .a-admin-content {
+      width: 100%; } } }
+
+/* Tag and Category Admin */
+
+/* JQ Date Picker Fix */
+
+#ui-datepicker-div {
+  z-index: 9999; }
+}

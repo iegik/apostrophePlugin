@@ -1,0 +1,23 @@
+@import "scss/a-admin";
+@import "scss/a-area-slots";
+@import "scss/a-buttons";
+@import "scss/a-colors";
+@import "scss/a-components";
+@import "scss/a-engines";
+@import "scss/a-forms";
+@import "scss/a-ie";
+@import "scss/a-reset";
+@import "scss/a-utility";
+
+@mixin a-all{
+  @include a-admin;
+  @include a-area-slots;
+  @include a-buttons;
+  @include a-colors;
+  @include a-components;
+  @include a-engines;
+  @include a-forms;
+  @include a-ie;
+  @include a-reset;
+  @include a-utility;
+}
